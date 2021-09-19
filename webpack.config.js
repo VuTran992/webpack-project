@@ -3,7 +3,6 @@ module.exports = (env) => {
   if (!env.mode) {
     env.mode = 'development';
   }
-  console.log(env.mode);
   return {
     mode: env.mode,
     module: {
