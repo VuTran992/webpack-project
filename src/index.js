@@ -1,6 +1,14 @@
-const data = {
-  "id": "A123",
-  "name": "dave"
+const taskRequest = {
+  "id": "R0001",
+  "name": "Task 01",
+  "description": "Build up webpack request."
 };
 
-console.log(data);
+const taskInfor = {
+  ...taskRequest,
+  "status": "inprogress",
+  "assignTo": "vu Tr."
+
+};
+console.log(taskRequest);
+console.log(taskInfor);
