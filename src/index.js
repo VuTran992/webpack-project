@@ -1,3 +1,5 @@
+import './styles/index.scss';
+
 const taskRequest = {
   "id": "R0001",
   "name": "Task 01",
