@@ -14,3 +14,7 @@ Command 03: CSS SASS
 npm install -D css-loader mini-css-extract-plugin
 npm install -D sass sass-loader
 npm install -D postcss postcss-preset-env postcss-loader
+
+Command 04: HTML, assets
+npm install -D html-webpack-plugin
+npm install -D copy-webpack-plugin

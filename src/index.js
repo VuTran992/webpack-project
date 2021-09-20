@@ -1,5 +1,5 @@
 import './styles/index.scss';
-
+import Image from './media/banner.jpg';
 const taskRequest = {
   "id": "R0001",
   "name": "Task 01",
@@ -12,5 +12,7 @@ const taskInfor = {
   "assignTo": "vu Tr."
 
 };
+
+document.body.appendChild(carousel());
 console.log(taskRequest);
 console.log(taskInfor);
