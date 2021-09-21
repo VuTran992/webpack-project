@@ -1,5 +1,6 @@
 import './styles/index.scss';
-import Image from './media/banner.jpg';
+import html from './index.html';
+
 const taskRequest = {
   "id": "R0001",
   "name": "Task 01",

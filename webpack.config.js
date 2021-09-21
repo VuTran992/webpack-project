@@ -16,6 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        loader: "html-loader"
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -47,11 +51,6 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin(),
-    new CopyPlugin({
-      patterns: [
-        { from: "./src/media", to: "./media" }
-      ]
-    }),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     })
