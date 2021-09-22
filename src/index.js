@@ -1,6 +1,7 @@
 import './styles/index.scss';
 import html from './index.html';
 
+
 const taskRequest = {
   "id": "R0001",
   "name": "Task 01",
@@ -14,6 +15,5 @@ const taskInfor = {
 
 };
 
-document.body.appendChild(carousel());
 console.log(taskRequest);
 console.log(taskInfor);

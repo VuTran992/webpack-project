@@ -1,4 +1,3 @@
-const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
@@ -7,7 +6,7 @@ module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
+    filename: "scripts/[name].js",
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: "assets/[name][ext][query]",
     clean: true,
@@ -17,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
-        loader: "html-loader"
+        loader: "html-loader",
       },
       {
         test: /\.js$/,
@@ -38,19 +37,38 @@ module.exports = {
           ,
           "css-loader",
           "postcss-loader",
-          "sass-loader",
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                quietDeps: true,
+              },
+            },
+          },
         ],
 
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name][ext][query]'
+        }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext][query]'
+        }
       },
     ]
   },
 
   plugins: [
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].css"
+    }),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     })

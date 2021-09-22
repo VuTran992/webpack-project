@@ -1,5 +1,7 @@
 "# webpack-project"
 
+Description: An initialize Front-End project for CMS. Using Webpack, Fontawesome, Google Fonts.
+
 Command 01: Init project
 
 npm init -y
@@ -19,3 +21,8 @@ Command 04: HTML, assets
 npm install -D html-loader
 npm install -D html-webpack-plugin
 npm install -D copy-webpack-plugin
+
+Command 05: SASS, Fontawesome Free, google fonts.
+npm install -D @fortawesome/fontawesome-free
+
+Command 06: Structured output, JS, CSS, Fonts, Images
