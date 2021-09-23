@@ -1,6 +1,8 @@
 import './styles/index.scss';
 import html from './index.html';
 
+import "./components/menu";
+
 
 const taskRequest = {
   "id": "R0001",
