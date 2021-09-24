@@ -108,6 +108,10 @@
       }
     }
   }
+
+  .active {
+    color: $secondary-color;
+  }
 }
 
 @for $i from 1 through 4 {

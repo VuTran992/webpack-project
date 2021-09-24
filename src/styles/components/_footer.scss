@@ -1,0 +1,26 @@
+footer {
+  font-size: 1rem;
+  color: set-text-color($primary-color);
+
+  .section-wraper {
+    padding: 1rem;
+    .social-icons {
+      a {
+        padding: 0.4em;
+        @include transition-ease;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+    .copy-right {
+      text-align: right;
+    }
+  }
+}
+
+.pin-bt {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

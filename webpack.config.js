@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: "./src/app.js",
   output: {
     filename: "scripts/[name].js",
     path: path.resolve(__dirname, 'dist'),
@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
+        test: /\.html$/i,
         loader: "html-loader",
       },
       {
@@ -71,12 +71,19 @@ module.exports = {
       filename: "css/[name].css"
     }),
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
-    })
+      template: './src/html/index.html',
+      inject: true,
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/about.html',
+      inject: true,
+      filename: 'about.html'
+    }),
   ],
   devtool: 'source-map',
   devServer: {
     static: "./dist",
-    // hot: true
+    hot: true
   }
 };
