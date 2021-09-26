@@ -80,6 +80,16 @@ module.exports = {
       inject: true,
       filename: 'about.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/html/project.html',
+      inject: true,
+      filename: 'project.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/blog.html',
+      inject: true,
+      filename: 'blog.html'
+    })
   ],
   devtool: 'source-map',
   devServer: {
