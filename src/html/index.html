@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
     <header>
@@ -14,13 +14,16 @@
       <nav class="nav">
         <ul class="menu-nav">
           <li class="menu-nav__item">
-            <a href="index.html" class="menu-nav__link">Home</a>
+            <a href="/" class="menu-nav__link active">Home</a>
           </li>
           <li class="menu-nav__item">
-            <a href="index.html" class="menu-nav__link">Blogs</a>
+            <a href="blog.html" class="menu-nav__link">Blogs</a>
           </li>
           <li class="menu-nav__item">
-            <a href="index.html" class="menu-nav__link">My Project</a>
+            <a href="project.html" class="menu-nav__link">Projects</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="about.html" class="menu-nav__link">About Me</a>
           </li>
           <li class="menu-nav__item">
             <a href="index.html" class="menu-nav__link">Contact</a>
@@ -29,13 +32,19 @@
       </nav>
     </header>
     <main>
-      <section class="banner">
-        <h2 class="banner__title">My name is</h2>
-        <h2 class="banner__subtitle">Mike</h2>
-        <p class="banner__description">Web Developer, Programer, Designer!</p>
+      <section class="hero">
+        <div class="banner">
+          <div class="banner-content">
+            <h2>My name is</h2>
+            <h1 class="bt-border-active">Mike</h1>
+            <p>Web Developer, Programer, Designer!</p>
+          </div>
+        </div>
       </section>
-      <section class="section-bottom">
-        <div class="social_icons">
+    </main>
+    <footer class="pin-bt">
+      <section class="section-wraper">
+        <div class="social-icons">
           <a href="#!">
             <i class="fab fa-linkedin fa-2x"></i>
           </a>
@@ -46,8 +55,10 @@
             <i class="fab fa-facebook fa-2x"></i>
           </a>
         </div>
+        <div class="copy-right">
+          <span>&copy; Copyright: 2021</span>
+        </div>
       </section>
-    </main>
-    <footer>&copy; Copyright: 2021</footer>
+    </footer>
   </body>
 </html>

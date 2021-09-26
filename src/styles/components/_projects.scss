@@ -1,0 +1,33 @@
+.projects {
+  font-size: 0.75em;
+
+  .project-item {
+    margin: 1.5em 0 1.5em;
+
+    &__date {
+      font-size: 0.8em;
+    }
+
+    &__tags {
+      padding: 1em 0em;
+    }
+
+    &__desc {
+      margin-top: 0.5em;
+    }
+    &__bt {
+      border-bottom: 5px solid $secondary-color;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+      align-items: center;
+      padding: 1em 0;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
