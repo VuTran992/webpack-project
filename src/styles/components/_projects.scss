@@ -2,8 +2,6 @@
   font-size: 0.75em;
 
   .project-item {
-    margin: 1.5em 0 1.5em;
-
     &__date {
       font-size: 0.8em;
     }
@@ -25,6 +23,9 @@
     }
     a:hover {
       color: $secondary-color;
+    }
+    i {
+      padding: 0.5em;
     }
     img {
       width: 100%;

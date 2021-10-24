@@ -17,10 +17,12 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "components/banner";
 @import "components/badge";
 @import "components/section";
+@import "components/footer";
+@import "components/container";
 //pages
 @import "components/about";
 @import "components/projects";
-@import "components/footer";
+@import "components/article";
 
 body {
   background-color: $primary-color;
@@ -33,6 +35,10 @@ body {
 a {
   color: set-text-color($primary-color);
   text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+  }
 }
 .text-secondary {
   color: $secondary-color;
